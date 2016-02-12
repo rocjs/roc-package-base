@@ -5,7 +5,7 @@ node_js:
 env:
   - DIR=.
   - DIR=dev
-before_script:
+before_install:
     - cd $DIR
 deploy:
     provider: npm
