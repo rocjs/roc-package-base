@@ -12,7 +12,8 @@
     "test": "npm run lint",
     "check": "ncu",
     "esdocs": "esdoc -c esdoc.json",
-    "prepublish": "npm run lint && npm run clean && npm run esdocs && npm run build"
+    "prepublish": "npm run lint && npm run clean && npm run esdocs && npm run build",
+    "docs": "roc markdown-commands > ./docs/Commands.md"
   },
   "files": [
     "bin",

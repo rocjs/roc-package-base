@@ -3,8 +3,8 @@
 *
 * All extensions must export this for them to be considered valid extensions.
 */
-export config from './config/roc.config.js';
-export metaConfig from './config/roc.config.meta.js';
+export { rocPackageConfig } from './config';
+export { rocPackageMetaConfig } from './config';
 
 /**
 * Commands
