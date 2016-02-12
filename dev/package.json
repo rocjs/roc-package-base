@@ -1,0 +1,56 @@
+{
+  "name": "roc-package-core-dev",
+  "version": "1.0.0-beta.1",
+  "description": "Core package for Roc (Development)",
+  "main": "lib/index.js",
+  "bin": "bin/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib --source-maps",
+    "build:watch": "npm run build -- --watch",
+    "clean": "rimraf lib esdocs",
+    "lint": "eslint .",
+    "test": "npm run lint",
+    "check": "ncu",
+    "esdocs": "esdoc -c esdoc.json",
+    "prepublish": "npm run lint && npm run clean && npm run build && npm run esdocs"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "keywords": [
+    "roc",
+    "roc-package"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rocjs/roc-package-core.git"
+  },
+  "author": "VG",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "~4.3.0",
+    "rimraf": "~2.5.1",
+    "roc": "*",
+    "roc-package-core": "^1.0.0-beta"
+  },
+  "devDependencies": {
+    "babel-cli": "~6.5.1",
+    "babel-eslint": "5.0.0-beta10",
+    "babel-plugin-transform-es2015-destructuring": "~6.5.0",
+    "babel-plugin-transform-es2015-function-name": "~6.5.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "~6.5.0",
+    "babel-plugin-transform-es2015-parameters": "~6.5.0",
+    "babel-plugin-transform-es2015-spread": "~6.5.0",
+    "babel-plugin-transform-es2015-sticky-regex": "~6.5.0",
+    "babel-plugin-transform-es2015-unicode-regex": "~6.5.0",
+    "babel-plugin-transform-export-extensions": "~6.5.0",
+    "babel-plugin-transform-object-rest-spread": "~6.5.0",
+    "esdoc": "~0.4.3",
+    "esdoc-es7-plugin": "~0.0.3",
+    "esdoc-importpath-plugin": "0.0.1",
+    "eslint": "~1.10.3",
+    "eslint-config-vgno": "~5.0.0",
+    "npm-check-updates": "~2.5.8"
+  }
+}
