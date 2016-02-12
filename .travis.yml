@@ -6,7 +6,7 @@ env:
   - DIR=.
   - DIR=dev
 before_install:
-    - cd $DIR
+    - if test $DIR = "dev" ; then npm link && cd $DIR && npm link roc-package-core ; fi
 deploy:
     provider: npm
     email: arsovik@gmail.com

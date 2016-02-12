@@ -25,7 +25,7 @@ const rocPackageMetaConfig = {
             },
 
             build: {
-                target: isArray(),
+                targets: isArray(),
                 input: isPath,
                 output: isPath
             }

@@ -3,7 +3,7 @@ import clean from '../commands/clean';
 const rocPackageConfig = {
     settings: {
         dev: {
-            // We define this here since this is something that several extensions might want to use.
+            // We define this here since this is something that several packages might want to use.
             debug: 'roc:*'
         },
 

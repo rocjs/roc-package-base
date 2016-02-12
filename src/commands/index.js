@@ -1,7 +1,7 @@
 import { generateTextDocumentation, generateMarkdownDocumentation } from 'roc';
 
 /**
- * List the settings that are possible with the current extensions.
+ * List the settings that are possible with the current packages.
  *
  * @param {object} rocCommandObject - A command object
  */
@@ -12,7 +12,7 @@ export function listSettings({ metaObject, extensionConfig }) {
 }
 
 /**
- * List the settings that are possible with the current extensions in a markdown format.
+ * List the settings that are possible with the current packages in a markdown format.
  *
  * Tip: Can be used to create Markdown files.
  * `roc markdown-settings > settings.md`
