@@ -21,7 +21,8 @@
   ],
   "keywords": [
     "roc",
-    "roc-package"
+    "roc-package",
+    "roc-dev"
   ],
   "repository": {
     "type": "git",
@@ -30,14 +31,14 @@
   "author": "VG",
   "license": "MIT",
   "dependencies": {
-    "lodash": "~4.3.0",
+    "lodash": "~4.5.1",
     "rimraf": "~2.5.1",
     "roc": "*",
     "roc-package-core": "^1.0.0-beta"
   },
   "devDependencies": {
     "babel-cli": "~6.5.1",
-    "babel-eslint": "5.0.0-beta10",
+    "babel-eslint": "~5.0.0",
     "babel-plugin-transform-es2015-destructuring": "~6.5.0",
     "babel-plugin-transform-es2015-function-name": "~6.5.0",
     "babel-plugin-transform-es2015-modules-commonjs": "~6.5.0",
@@ -50,7 +51,7 @@
     "esdoc": "~0.4.3",
     "esdoc-es7-plugin": "~0.0.3",
     "esdoc-importpath-plugin": "0.0.1",
-    "eslint": "~1.10.3",
+    "eslint": "~2.2.0",
     "eslint-config-vgno": "~5.0.0",
     "npm-check-updates": "~2.5.8"
   }
