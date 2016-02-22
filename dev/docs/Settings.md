@@ -6,7 +6,7 @@
 | ------- | ------------------------------------------------------------------------------------------------------- | ------------- | --------------- | --------- | ---------- | -------- |
 | input   | The entry point for the build.                                                                          | build.input   | --build-input   | `null`    | `Filepath` | No       |
 | output  | The output directory for the build.                                                                     | build.output  | --build-output  | `null`    | `Filepath` | No       |
-| targets | For what targets the code should be built for.                                                          | build.targets | --build-targets | `null`    | `Unknown`  | No       |
+| targets | For what targets the code should be built for.                                                          | build.targets | --build-targets | `null`    | `[]`       | No       |
 
 # Dev
 

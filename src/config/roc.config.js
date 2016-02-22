@@ -13,7 +13,7 @@ const rocPackageConfig = {
 
     plugins: {},
 
-    extensions: []
+    packages: []
 };
 
 /**

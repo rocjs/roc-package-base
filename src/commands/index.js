@@ -5,9 +5,9 @@ import { generateTextDocumentation, generateMarkdownDocumentation } from 'roc';
  *
  * @param {object} rocCommandObject - A command object
  */
-export function listSettings({ metaObject, extensionConfig }) {
+export function listSettings({ metaObject, packageConfig }) {
     /* eslint-disable no-console */
-    console.log(generateTextDocumentation(extensionConfig, metaObject));
+    console.log(generateTextDocumentation(packageConfig, metaObject));
     /* eslint-enable */
 }
 
@@ -19,8 +19,8 @@ export function listSettings({ metaObject, extensionConfig }) {
  *
  * @param {object} rocCommandObject - A command object
  */
-export function markdownSettings({ metaObject, extensionConfig }) {
+export function markdownSettings({ metaObject, packageConfig }) {
     /* eslint-disable no-console */
-    console.log(generateMarkdownDocumentation(extensionConfig, metaObject));
+    console.log(generateMarkdownDocumentation(packageConfig, metaObject));
     /* eslint-enable */
 }
