@@ -4,8 +4,6 @@ import { invokeHook } from '../roc';
 
 /**
  * Cleans the build files.
- * *
- * @param {Object} rocCommandObject - A command object.
  */
 export default function clean({ configObject: { settings }}) {
     /*

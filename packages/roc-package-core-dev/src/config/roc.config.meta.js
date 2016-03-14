@@ -4,7 +4,7 @@ import {
     isArray
 } from 'roc/validators';
 
-const rocPackageMetaConfig = {
+const meta = {
     settings: {
         descriptions: {
             dev: {
@@ -51,4 +51,4 @@ const rocPackageMetaConfig = {
  *
  * @returns {object} - Returns the package dev meta configuration.
  */
-export default rocPackageMetaConfig;
+export default meta;

@@ -1,4 +1,4 @@
-const rocPackageMetaConfig = {
+const meta = {
     commands: {
         'list-settings': {
             description: 'Prints all the available settings that can be changed.'
@@ -20,4 +20,4 @@ const rocPackageMetaConfig = {
  *
  * @returns {object} - Returns the package meta configuration.
  */
-export default rocPackageMetaConfig;
+export default meta;
