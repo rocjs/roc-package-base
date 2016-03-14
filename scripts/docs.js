@@ -1,4 +1,4 @@
-const exec = require('shelljs').exec;
+const execShell = require('./util').execShell;
 const name = require('../package.json').name;
 
 const toHide = Object.keys(require('roc').roc.config.commands).join(',');
@@ -15,4 +15,4 @@ const actionsDocs =
 const generateDocumentation = (packageName) =>
     `cd packages/${packageName} && ${settingsDocs} && ${commandsDocs} && ${hooksDocs} && ${actionsDocs}`;
 
-exec(`${generateDocumentation(name)} & ${generateDocumentation(name + '-dev')} & wait`);
+execShell(`${generateDocumentation(name)} && ${generateDocumentation(name + '-dev')}`);

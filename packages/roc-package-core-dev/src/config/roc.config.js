@@ -1,6 +1,6 @@
 import clean from '../commands/clean';
 
-const rocPackageConfig = {
+const config = {
     settings: {
         dev: {
             // We define this here since this is something that several packages might want to use.
@@ -30,4 +30,4 @@ const rocPackageConfig = {
  *
  * @returns {object} - Returns the package configuration.
  */
-export default rocPackageConfig;
+export default config;

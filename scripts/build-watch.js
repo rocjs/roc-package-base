@@ -1,5 +1,5 @@
 const join = require('path').join;
-const exec = require('shelljs').exec;
+const exec = require('./util').exec;
 const name = require('../package.json').name;
 const babel = join(__dirname, '..', 'node_modules', '.bin', 'babel');
 

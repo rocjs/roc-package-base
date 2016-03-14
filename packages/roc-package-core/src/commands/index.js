@@ -7,8 +7,6 @@ import {
 
 /**
  * List the settings that are possible with the current packages.
- *
- * @param {object} rocCommandObject - A command object
  */
 export function listSettings({ metaObject, packageConfig }) {
     /* eslint-disable no-console */
@@ -21,8 +19,6 @@ export function listSettings({ metaObject, packageConfig }) {
  *
  * Tip: Can be used to create Markdown files.
  * `roc markdown-settings > settings.md`
- *
- * @param {object} rocCommandObject - A command object
  */
 export function markdownSettings({ info: { name }, metaObject, packageConfig }) {
     /* eslint-disable no-console */
@@ -35,8 +31,6 @@ export function markdownSettings({ info: { name }, metaObject, packageConfig }) 
  *
  * Tip: Can be used to create Markdown files.
  * `roc markdown-hooks > hooks.md`
- *
- * @param {object} rocCommandObject - A command object
  */
 export function markdownHooks({ info: { name }, hooks }) {
     /* eslint-disable no-console */
@@ -49,8 +43,6 @@ export function markdownHooks({ info: { name }, hooks }) {
  *
  * Tip: Can be used to create Markdown files.
  * `roc markdown-actions > actions.md`
- *
- * @param {object} rocCommandObject - A command object
  */
 export function markdownActions({ info: { name }, actions }) {
     /* eslint-disable no-console */
